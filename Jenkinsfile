@@ -7,5 +7,12 @@ pipeline {
       }
     }
 
+    stage('Packaging') {
+      steps {
+        sh '''npm run install
+npm run buidl'''
+      }
+    }
+
   }
 }
