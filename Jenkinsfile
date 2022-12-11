@@ -9,8 +9,14 @@ pipeline {
 
     stage('Packaging') {
       steps {
-        sh '''npm run install
+        sh '''npm install
 npm run buidl'''
+      }
+    }
+
+    stage('Deploy') {
+      steps {
+        sh 'ls'
       }
     }
 
